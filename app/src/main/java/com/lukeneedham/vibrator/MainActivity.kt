@@ -5,6 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.lukeneedham.vibrator.ui.main.MainPage
 import com.lukeneedham.vibrator.util.Vibrator
+import com.lukeneedham.vibrator.util.VibrationService
+import android.content.Intent
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
