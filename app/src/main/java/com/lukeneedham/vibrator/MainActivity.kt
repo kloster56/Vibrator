@@ -17,11 +17,14 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun setVibrating(isVibrating: Boolean) {
-        val vibrator = Vibrator(this)
         if (isVibrating) {
-            vibrator.start()
+            // Start the VibrationService
+            val startServiceIntent = Intent(this, VibrationService::class.java)
+            startService(startServiceIntent)
         } else {
-            vibrator.stop()
+            // Stop the VibrationService
+            val stopServiceIntent = Intent(this, VibrationService::class.java)
+            stopService(stopServiceIntent)
         }
     }
 }
