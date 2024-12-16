@@ -25,8 +25,7 @@
             </intent-filter>
         </activity>
             <service
-        android:name=".util.VibrationService"
-        android:foregroundServiceType="none" />
+        android:name=".util.VibrationService" />
     </application>
 
 </manifest>
